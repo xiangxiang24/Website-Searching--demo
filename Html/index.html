@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Indexcss.css">
+    <title>SearchPage</title>
+</head>
+<body>
+    <header class="logo">
+        <section id="name">
+            <h4>EGA</h4>
+            <h4>Executive Golf Academy</h4>
+        </section>
+        <section id="menu">
+            <h4>Home</h4>
+            <h4>ระบบค้นหา</h4>
+            <h4>ออกจากระบบบ</h4>
+        </section>
+        <section id="search">
+            <select name="searchlist" id="searchlist">
+                <option value="all">ค้นหาทั้งหมด</option>
+                <option value="no">NO</option>
+                <option value="fullname">ชื่อ-สกุล</option>
+                <option value="nickname">ชื่อเล่น</option>
+                <option value="position">ตำแหน่ง</option>
+                <option value="ega">ตำแหน่ง / กลุ่มใน EGA</option>
+                <option value="organization">องค์กร</option>
+                <option value="business">ธุรกิจ</option>
+                <option value="address">ที่อยู่</option>
+                <option value="phone">เบอร์โทร</option>
+            </select>
+            <input type="text" name="searchtype" id="searchType" placeholder="พิมพ์คำค้น เช่น ชื่อ / บริษัท / เบอร์" required>
+            <button type="button" id="searchbt" onclick="SearchforCategories()">ค้นหา</button> <!-- searchData() javascript -->
+        </section>
+        <section id="searching">
+            <table id="tabledata">
+                <tr id="table-head">
+                    <th>NO</th>
+                    <th>ชื่อ-สกุล</th>
+                    <th>ชื่อเล่น</th>
+                    <th>ตำแหน่ง</th>
+                    <th>ตำแหน่ง / กลุ่มใน EGA</th>
+                    <th>องค์กร</th>
+                    <th>ธุรกิจ</th>
+                    <th>ที่อยู่</th>
+                    <th>เบอร์โทร</tr>
+                </tr>
+                <tbody id="table-body">
+                    <tr>
+                        <td id="no">1</td>
+                        <td id="name">คุณLL PP</td>
+                        <td id="Nname">เจน</td>
+                        <td id="role">กรรมการผู้จัดการ</td>
+                        <td id="egarole">กรรมการหลักสูตร</td>
+                        <td id="org">บริษัท เอสเจเจ เพอร์เฟคครูฟ จำกัด</td>
+                        <td id="busi">โรงงานผู้ผลิต นวัตกรรมเมทัลชีทระบายอากาศ</td>
+                        <td id="add">903/XX หมู่ X ถนนสุขุมวิท</td>
+                        <td id="tel">081XXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td id="no">2</td>
+                        <td id="name">คุณ F KK</td>
+                        <td id="Nname">น้ำ</td>
+                        <td id="role">กรรมการผู้จัดการ</td>
+                        <td id="egarole">กรรมการหลักสูตร</td>
+                        <td id="org">บริษัท ที.เอ.เมดิค จำกัด</td>
+                        <td id="busi">โรงงานผู้ผลิต KKK</td>
+                        <td id="add">999/XX หมู่ X ถนนสุขุมวิท</td>
+                        <td id="tel">084XXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td id="no">3</td>
+                        <td id="name">คุณA B</td>
+                        <td id="Nname">C</td>
+                        <td id="role">ประธานกรรมการบริหาร</td>
+                        <td id="egarole">ประธารและผู้อำนวยการหลักสูตร</td>
+                        <td id="org">บริษัท Golf Lab จำกัด</td>
+                        <td id="busi">โรงงานผู้ผลิต Golf</td>
+                        <td id="add">543/XX หมู่ X ถนนสุขุมวิท</td>
+                        <td id="tel">081XXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td id="no">4</td>
+                        <td id="name">คุณUU LL</td>
+                        <td id="Nname">N</td>
+                        <td id="role">สถาบันกอล์ฟ</td>
+                        <td id="egarole">โปรกอล์ฟ</td>
+                        <td id="org">บริษัท Golf Lab จำกัด</td>
+                        <td id="busi">โรงงานผู้ผลิต Golf</td>
+                        <td id="add">122/XX หมู่ X ถนนสุขุมวิท</td>
+                        <td id="tel">081XXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td id="no">5</td>
+                        <td id="name">คุณ4k PO</td>
+                        <td id="Nname">โปรY</td>
+                        <td id="role">สถาบันกอล์ฟ</td>
+                        <td id="egarole">โปรกอล์ฟ</td>
+                        <td id="org">บริษัท Golf Lab จำกัด</td>
+                        <td id="busi">โรงงานผู้ผลิต Golf</td>
+                        <td id="add">78/XX หมู่ X ถนนสุขุมวิท</td>
+                        <td id="tel">081XXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td id="no">6</td>
+                        <td id="name">คุณMA KA</td>
+                        <td id="Nname">โปรZ</td>
+                        <td id="role">Co Founder</td>
+                        <td id="egarole">โปรกอล์ฟ</td>
+                        <td id="org">บริษัท Golf Lab จำกัด</td>
+                        <td id="busi">โรงงานผู้ผลิต Golf</td>
+                        <td id="add">56/XX หมู่ X ถนนสุขุมวิท</td>
+                        <td id="tel">081XXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td id="no">7</td>
+                        <td id="name">คุณTY MK</td>
+                        <td id="Nname">โปรPP</td>
+                        <td id="role">Instructor</td>
+                        <td id="egarole">โปรกอล์ฟ</td>
+                        <td id="org">บริษัท TTK จำกัด</td>
+                        <td id="busi">โรงงานผู้ผลิต Golf</td>
+                        <td id="add">7123/XX หมู่ X ถนนสุขุมวิท</td>
+                        <td id="tel">081XXXXXXX</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </header>
+    <script src="../Js/Loginjs.js"></script>
+</body>
+</html>

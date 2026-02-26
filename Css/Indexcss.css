@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    margin: 1em;
+}
+#tabledata th, #tabledata td{
+    padding: 0.5em;
+    border: 1px solid black;
+}
+#tabledata th {
+    text-align: center;
+}
+#no {
+    text-align: center;
+}
+#table-head {
+    background-color: rgb(195, 49, 49);
+}
