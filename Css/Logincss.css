@@ -2,4 +2,37 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    align-content: center;
+}
+#information .head h4 {
+    border: 1px solid red;
+    width: fit-content;
+    padding: 0.3em;
+}
+main {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+#last p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#information {
+    /* border: 1px solid black; */
+    padding: 1em                                               ;
+}
+#information .head {
+    display: flex;
+    flex-direction: row;
+}
+.head p {
+    float: right;
+    font-size: 14px;
 }
