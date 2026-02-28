@@ -7,33 +7,34 @@
     <title>Login</title>
 </head>
 <body>
-    <main id="detail">
-        <section id="information">
-        <div class="head">
-            <h4>EGA</h2>
-            <p>Executive Golf Academy</p>
+    <main>
+        <div id="top">
+            <section id="information">
+                <div class="head">
+                    <h4>EGA</h4>
+                    <p style="font-size: 14px; color: grey;">Executive Golf Academy</p>
+                </div>
+                <div class="subhead">
+                    <h2>EGA Connect</h2>
+                    <p>ใส่รหัสเพื่อเข้าสู่ระบบค้นหาข้อมูล</p><br>
+                </div>
+                <div class="pass">
+                    <p id="headpas">Password</p>
+                    <input type="password" id="passw" name="passw" placeholder="พิมพ์รหัส">
+                    <p class="explain" style="color: grey;">เดโมนี้ใช้รหัส: <span style="font-weight: bold;">ega</span></p>
+                    <p id="error" style="color: red;"></p><br>
+                </div>
+                <button id="Loginto" onclick="loginpage()">เข้าสู่ระบบ</button>
+            </section>
+            <section id="Image">
+                <img src="../img/S__11239437.jpg" alt="GolfShow">
+            </section>
         </div>
-        <div class="subhead">
-            <h2>EGA Connect</h2>
-            <p>ใส่รหัสเพื่อเข้าสู่ระบบค้นหาข้อมูล</p>
+        <hr>
+        <div id="last">
+            <p class="CAP" style="color: grey;">Demo: Gate ก่อนเข้าหน้าค้นหา</p>
         </div>
-        <div class="pass">
-            <h5>Password</h5>
-            <input type="password" id="passw" name="passw" placeholder="พิทพ์รหัส">
-            <p id="error" style="color: red;"></p>
-            <p>เดโมนี้ใช้รหัส: ega</p>
-        </div>
-        <!-- <a href="../Html/index.html" target="_blank"><button id="Loginto">เข้าสู่ระบบ</button></a> -->
-         <button id="Loginto" onclick="loginpage()">เข้าสู่ระบบ</button>
-    </section>
-    <section id="Image">
-        <img src="../img/Screenshot 2569-02-23 at 15.58.59.webp" alt="GolfShow">
-    </section>
     </main>
-    <div id="last">
-        <p class="CAP" style="color: grey;">Demo: Gate ก่อนเข้าหน้า</p>
-    </div>
-
     <script src="../Js/Loginjs.js"></script>
 </body>
 </html>
